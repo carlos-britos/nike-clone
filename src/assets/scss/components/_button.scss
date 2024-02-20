@@ -1,0 +1,53 @@
+.c-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  transition: .3s;
+  padding: .8rem 1.5rem;
+  border-radius: 5rem;
+  width: min-content;
+  font-weight: 500;
+  
+  &.c-button {
+    &--with-icon {
+      padding: .4rem .8rem;
+      
+      &.both {
+        padding: .4rem .4rem .4rem .8rem;
+      }
+    }
+
+    &--only-icon {
+      padding: .4rem .6rem;
+    }
+
+    .icon-svg {
+      height: 24px;
+    }
+
+    &--contained {
+      &-primary {
+        background: var(--black);
+        color: var(--white);
+      }
+    }
+    
+    &--outlined {
+      border: 1px solid var(--button-outlined);
+    }
+
+    &--text {
+      border: none;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &:hover {
+    background: var(--primary-500-op-10);
+    box-shadow: 0 1px 8px -3px #1a1a1a33;
+  }
+}
