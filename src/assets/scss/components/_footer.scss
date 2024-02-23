@@ -1,0 +1,92 @@
+.footer {
+  padding: 1rem;
+  background: var(--black);
+
+  &__list {
+    color: var(--white);
+
+    .list-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--neutral-950);
+      
+      &--with-icon {
+        fill: var(--white);
+      }
+      
+      &:last-child {
+        border: none;
+      }
+      
+      &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+      }
+
+      &__sublist {
+        overflow: hidden;
+        max-height: 0;
+        transition: .3s;
+
+        &.show {
+          max-height: 100vh;
+        }
+
+        .sublist {
+          &__item {
+            padding: .6rem 0;
+            font-size: .8rem;
+            color: var(--neutral-200);
+          }
+        }
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+
+    .sid {
+      width: 150px;
+    }
+
+    .data-fiscal {
+      width: 80px;
+    }
+  }
+
+  &__social-networks {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 2rem;
+
+    .item {
+      background: #ffffff1a;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: .6rem;
+      transition: .3s;
+
+      svg {
+        width: 24px;
+        fill: var(--neutral-400);
+      }
+
+      &:hover {
+        background: var(--neutral-600);
+
+        svg {
+          fill: var(--neutral-200);
+        } 
+      }
+    }
+  }
+}

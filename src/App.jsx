@@ -5,6 +5,7 @@ import { BannerHome } from './components/views/home/BannerHome'
 import { ProductCarousel } from './components/shared/ProductCarousel'
 import { BannerHomeCategory } from './components/views/home/BannerHomeCategory'
 import { CategoryCarousel } from './components/shared/CategoryCarousel'
+import { Footer } from './components/shared/Footer'
 
 function App() {
   return (
@@ -18,9 +19,8 @@ function App() {
       <ProductCarousel />
       <CategoryCarousel />
       <CategoryCarousel />
-      <h1 className="title" style={{ margin: '4rem 0' }}>
-        Prueba
-      </h1>
+      <BannerHome />
+      <Footer />
     </>
   )
 }
