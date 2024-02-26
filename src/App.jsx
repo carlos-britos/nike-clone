@@ -34,7 +34,7 @@ function App() {
       <ProductCarousel />
       <FeaturedCategories isDesktop={isDesktop} />
       <CategoryCarousel/>
-      <BannerHome classes="mt-3-rem" />
+      <BannerHome classes="mt-3-rem-important" />
       <Footer />
     </>
   )

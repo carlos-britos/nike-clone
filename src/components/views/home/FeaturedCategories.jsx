@@ -4,7 +4,7 @@ const FeaturedCategories = () => {
   return (
     <div className="featured-categories">
 
-      <CategoryCard aditionalClasses=""/>
+      <CategoryCard aditionalClasses="featured-categories__simple"/>
       
       <div className="featured-categories__doble">
         <CategoryCard aditionalClasses=""/>

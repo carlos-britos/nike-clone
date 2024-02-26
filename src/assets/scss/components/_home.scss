@@ -13,6 +13,9 @@
 }
 
 .banner-home {
+  max-width: 1800px;
+  margin: auto;
+
   &__img {
     display: flex;
     align-items: center;
@@ -91,6 +94,9 @@
 }
 
 .doble-banner-home-category {
+  max-width: 1400px;
+  margin: auto;
+  
   @media (min-width: 768px) {
     display: flex;
 
