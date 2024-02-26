@@ -2,6 +2,9 @@ import { useEffect, useRef } from "react";
 import Swiper from "swiper";
 import 'swiper/css';
 import { CategoryCard } from './CategoryCard';
+import { Icon } from "../icons/Icon";
+import { ArrowLeft } from "../icons/ArrowLeft";
+import { ArrowRight } from "../icons/ArrowRight";
 
 const CategoryCarousel = () => {
   const swiperContainerRef = useRef(null);
@@ -39,15 +42,32 @@ const CategoryCarousel = () => {
       }
     };
   }, [])
-  
+
+  const handleNext = () => {
+    swiperInstanceRef.current.slideNext();
+  }
+
+  const handlePrev = () => {
+    swiperInstanceRef.current.slidePrev();
+  }
+
   return (
-    <div className="product-carousel">
-      <div className="product-carousel__title">
+    <div className="category-carousel">
+      <div className="category-carousel__title">
         Deportes
       </div>
-      <div className="product-carousel__carousel swiper" ref={swiperContainerRef} >
+      <div className="product-carousel__controllers">
+        <div className="c-button c-button--contained-primary-low c-button--only-icon prev" onClick={handlePrev}>
+          <Icon iconSvg={<ArrowLeft />} />
+        </div>
+        <div className="c-button c-button--contained-primary-low c-button--only-icon next" onClick={handleNext}>
+          <Icon iconSvg={<ArrowRight />} />
+        </div>
+      </div>
+      <div className="category-carousel__carousel swiper" ref={swiperContainerRef} >
         <div className="swiper-wrapper">
-
+          <CategoryCard aditionalClasses="swiper-slide"/>
+          <CategoryCard aditionalClasses="swiper-slide"/>
           <CategoryCard aditionalClasses="swiper-slide"/>
           <CategoryCard aditionalClasses="swiper-slide"/>
           <CategoryCard aditionalClasses="swiper-slide"/>
