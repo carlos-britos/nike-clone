@@ -3,27 +3,8 @@ html, body {
   overflow-x: hidden;
   color: var(--color-body);
 
-  &:hover {
-    &::-webkit-scrollbar-thumb {
-      background-color: #1a1a1a61;
-      border-radius: 4px;
-      transition: .3s;
-
-      &:hover {
-        background-color: #1a1a1acc;
-      }
-    }
-  }
-
-  &::-webkit-scrollbar {
-    width: 8px;
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: transparent;
-    z-index: 1;
-  }
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 
 .body-div {
