@@ -20,6 +20,7 @@
 
     &--only-icon {
       padding: .4rem .6rem;
+      aspect-ratio: 1;
     }
 
     .icon-svg {
@@ -30,6 +31,13 @@
       &-primary {
         background: var(--black);
         color: var(--white);
+        fill: var(--white);
+
+        &-low {
+          background: var(--neutral-100);
+          color: var(--neutral-700-op-70);
+          fill: var(--neutral-700-op-70);
+        }
       }
     }
     
