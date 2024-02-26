@@ -1,15 +1,33 @@
 .product-carousel {
+  margin-top: 2rem;
+  position: relative;
+
+  @media (min-width: 992px) {
+    margin: 4rem auto 0;
+  }
+
   @media (min-width: 1400px) {
     max-width: 1400px;
-    margin: auto;
   }
   
   &__title {
     font-size: 2rem;
-    margin: 2rem 0 1rem;
+    margin: 0 0 1rem;
     padding: 0 1rem;
     font-weight: 500;
     color: var(--neutral-950);
+  }
+
+  &__controllers {
+    display: none;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+
+    @media (min-width: 992px) {
+      display: flex;
+    }
   }
 
   &__carousel {
