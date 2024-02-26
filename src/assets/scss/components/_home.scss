@@ -89,3 +89,13 @@
     }
   }
 }
+
+.doble-banner-home-category {
+  @media (min-width: 768px) {
+    display: flex;
+
+    .banner-home-category {
+      flex-grow: 1;
+    }
+  }
+}

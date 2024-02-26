@@ -1,6 +1,6 @@
-const BannerHome = () => {
+const BannerHome = ({ classes }) => {
   return (
-    <div className="banner-home">
+    <div className={`banner-home ${classes ? classes : ''}`}>
       <div className="banner-home__img">
         <picture>
           <source
