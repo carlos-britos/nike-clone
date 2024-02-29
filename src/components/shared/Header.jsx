@@ -1,16 +1,15 @@
 // import { useState, useEffect } from 'react';
-// import { MenuMobile } from '../reusable/MenuMobile';
+import { MenuMobile } from '../reusable/MenuMobile';
 // import { NavDesktop } from '../reusable/NavDesktop';
 import { Link } from 'react-router-dom'
 import { Icon } from '../icons/Icon';
 import { Logo } from '../icons/Logo';
-import { MenuBurgerButton } from '../icons/MenuBurgerButton';
 import { Search } from '../icons/Search';
 import { ShoppingBag } from '../icons/ShoppingBag';
 import { JordanLogo } from '../icons/JordanLogo';
 
 
-const Header = () => {
+const Header = ({ isDesktop }) => {
   // const [isDesktop, setIsDesktop] = useState(window.innerWidth > 991);
 
   // useEffect(() => {
@@ -59,10 +58,7 @@ const Header = () => {
       </div>
       <div className="header__wrapper">
         {/* {!isDesktop && <MenuMobile darkMode={ darkMode } toggleThemeChange={ toggleThemeChange } />} */}
-
-        <div className="c-menu__open">
-          <Icon iconSvg={<MenuBurgerButton />} />
-        </div>
+        {!isDesktop && <MenuMobile />}
 
         <Link to='/' className="header__logo">
           <Icon iconSvg={<Logo />} />
