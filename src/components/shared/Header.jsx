@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 import { Icon } from '../icons/Icon';
 import { Logo } from '../icons/Logo';
 import { Search } from '../icons/Search';
-import { ShoppingBag } from '../icons/ShoppingBag';
 import { JordanLogo } from '../icons/JordanLogo';
+import { CartInView } from '../reusable/CartInView';
 
 
 const Header = ({ isDesktop }) => {
@@ -58,7 +58,7 @@ const Header = ({ isDesktop }) => {
       </div>
       <div className="header__wrapper">
         {/* {!isDesktop && <MenuMobile darkMode={ darkMode } toggleThemeChange={ toggleThemeChange } />} */}
-        {!isDesktop && <MenuMobile />}
+        {!isDesktop && <MenuMobile />}  
 
         <Link to='/' className="header__logo">
           <Icon iconSvg={<Logo />} />
@@ -78,9 +78,8 @@ const Header = ({ isDesktop }) => {
             <Icon iconSvg={<Search />} />
             <input type="text" placeholder="Buscar" />
           </div>
-          <div className="actions__cart">
-            <Icon iconSvg={<ShoppingBag />} />
-          </div>
+
+          <CartInView/>
         </div>
         
         {/* {isDesktop && <NavDesktop darkMode={ darkMode } toggleThemeChange={ toggleThemeChange } />} */}
