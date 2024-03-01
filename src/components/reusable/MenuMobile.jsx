@@ -6,6 +6,7 @@ import { ArrowLeft } from '../icons/ArrowLeft';
 import { CloseButton } from '../icons/CloseButton';
 import { Link } from 'react-router-dom'
 import { ArrowRight } from '../icons/ArrowRight';
+import { JordanLogo } from '../icons/JordanLogo'
 import categories from '../dataBase/categories';
 // import { DarkMode } from '../icons/DarkMode';
 // import { LightMode } from '../icons/LightMode';
@@ -152,8 +153,9 @@ const MenuMobile = () => {
               </div>  
             ))}
 
-            <Link className="list-item" to="/portfolio/">
-              Idioma
+            <Link className="list-item list-item--with-icon" to="/portfolio/">
+              <Icon iconSvg={<JordanLogo />} />
+              Jordan
             </Link>
 
             {/* <Link className="list-item list-item--with-icon" to="/portfolio/" onClick={() => toggleThemeChange()}>
