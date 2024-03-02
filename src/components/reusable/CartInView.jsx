@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Icon } from "../icons/Icon"
 import { ShoppingBag } from "../icons/ShoppingBag"
 import { CloseButton } from '../icons/CloseButton';
+import { ProductCard } from '../shared/ProductCard'
 
 const CartInView = () => {
   const [cartState, setCartState] = useState({
@@ -35,31 +36,21 @@ const CartInView = () => {
       <div className={`c-cart__overlay ${cartState.menuOpen ? 'show' : ''}`} onClick={closeMenu}></div>
       <div className={`c-cart ${cartState.menuOpen ? 'show' : ''}`}>
         <div className="c-cart__header">
-
+          <div className="cart-header__title">
+            Mi compra
+          </div>
           <button className="cart-header__close" aria-label="Cerrar carrito" onClick={closeMenu}>
             <Icon iconSvg={<CloseButton />} />
           </button>
         </div>
 
-        <div className="c-cart__list">
-          {/* <ul className={`menu-list menu-list--step-1 ${cartState.currentStep > 1 ? 'prev' : ''}`}>
+        <div className="c-cart__body">
+          <div className="body__products">
+            <ProductCard modifier="on-cart" />
+            <ProductCard modifier="on-cart" />
+            <ProductCard modifier="on-cart" />
 
-            {categories.level1.map((category, index) => (
-              <div className="list-item list-item--with-sublist" data-category={ category.id } key={index}>
-              
-                { category.name }
-
-                <div className="sublist-toggler">
-                  <Icon iconSvg={<ArrowRight/>} />
-                </div>
-              </div>  
-            ))}
-
-            <Link className="list-item list-item--with-icon" to="/portfolio/">
-              <Icon iconSvg={<JordanLogo />} />
-              Jordan
-            </Link>
-          </ul> */}
+          </div>
         </div>
       </div>
     </> 

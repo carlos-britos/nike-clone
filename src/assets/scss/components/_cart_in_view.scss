@@ -97,6 +97,7 @@ html[data-theme="dark"] {
 	&__header {
 		display: flex;
 		align-items: center;
+		border-bottom: 1px solid var(--neutral-300);
 
 		button {
 			transition: .3s;
@@ -111,6 +112,12 @@ html[data-theme="dark"] {
 	}
 
 	.cart-header {
+		&__title {
+			padding: 0 1rem;
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
+
 		&__close {
       margin-left: auto;
 			padding: 1rem;
@@ -128,11 +135,21 @@ html[data-theme="dark"] {
 		}
 	}
 
-	&__list {
+	&__body {
     height: calc(100% - 59px /*tamaño del header*/);
 		display: flex;
     overflow: hidden;
     position: relative;
+
+		.body {
+			&__products {
+				width: 100%;
+			}
+		}
+	}
+
+	@media (min-width: 576px) {
+		max-width: 450px;
 	}
 }
 

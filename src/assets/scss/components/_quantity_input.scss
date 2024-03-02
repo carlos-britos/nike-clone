@@ -1,0 +1,45 @@
+.quantity-input {
+  display: flex;
+
+  &__input,
+  &__button {
+    height: 40px;
+    background: white;
+
+    input {
+      height: inherit;
+    }
+  }
+
+  &__input {
+    display: contents;
+
+    input {
+      padding: 0 1rem;
+      text-align: center;
+      outline: unset;
+      border: unset;
+      width: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+
+      @media (min-width: 576px) {
+        width: 60px;
+      }
+    }
+  }
+
+  &__button {
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      border-radius: 1rem 0 0 1rem;
+    }
+
+    &:last-child {
+      border-radius: 0 1rem 1rem 0;
+    }
+  }
+}
