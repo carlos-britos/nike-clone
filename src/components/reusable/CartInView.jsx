@@ -47,9 +47,65 @@ const CartInView = () => {
         <div className="c-cart__body">
           <div className="body__products">
             <ProductCard modifier="on-cart" />
-            <ProductCard modifier="on-cart" />
-            <ProductCard modifier="on-cart" />
+          </div>
 
+          <div className="body__want-bag">
+            <div className="want-bag__img">
+              <img src="/src/assets/images/nike-bag.png" alt="Bolsa Nike" loading="lazy" />
+            </div>
+            <div className="want-bag__info">
+              <div className="want-bag__text">
+                <div className="title">
+                  ¡Quiero una bolsa!
+                </div>
+                <div className="name">
+                  Bolsa
+                </div>
+                <div className="price">
+                  Gratis
+                </div>
+              </div>
+              <div className="want-bag__button">
+                <div className="c-button c-button--contained-primary">
+                  Agregar
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div className="body__postal-code">
+            <div className="postal-code__label">
+              Introducí tu Código Postal y calculá el costo de envio.
+            </div>
+            <div className="postal-code__input">
+              <input type="text" placeholder='ej: 2000'/>
+              <button className='c-button c-button--outlined'>
+                Calcular
+              </button>
+            </div>
+          </div>
+
+          <div className="body__summary">
+            <div className="summary__total">
+              <div className="total__items">
+                <div className="item">
+                  <span>Subtotal</span>
+                  <span>$ 179.999</span>
+                </div>
+                <div className="item">
+                  <span>Envío</span>
+                  <span>$ 7.000</span>
+                </div>
+              </div>
+              <div className="total__total">
+                <span>Total</span>
+                <span>$ 186.999</span>
+              </div>
+            </div>
+            <button className="summary__action">
+              Iniciar compra
+            </button>
           </div>
         </div>
       </div>
