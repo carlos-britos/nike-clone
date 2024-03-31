@@ -1,6 +1,7 @@
 import { DeleteIcon } from "../icons/DeleteIcon";
 import { Icon } from "../icons/Icon";
 import { QuantityInput } from "../reusable/QuantityInput";
+import image from "../../assets/images/products/air-force-1.webp"
 
 const ProductCard = ({ aditionalClasses, modifier }) => {
   const onCart = !!modifier;
@@ -13,7 +14,7 @@ const ProductCard = ({ aditionalClasses, modifier }) => {
   return (
     <div className={`product-card ${aditionalClasses} ${modifier}`}>
       <div className="product-card__img">
-        <img src="/src/assets/images/products/air-force-1.webp" alt="Nike Air Force 1 '07 SE" loading="lazy" />
+        <img src={image} alt="Nike Air Force 1 '07 SE" loading="lazy" />
         {/* TODO: Agregar etiqueta para cuando haya un producto nuevo */}
       </div>
 
