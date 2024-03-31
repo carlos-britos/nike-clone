@@ -1,14 +1,17 @@
+import bannerMobile from "../../assets/images/banner-shoe.webp"
+import bannerDesktop from "../../assets/images/banner-shoe-desktop.webp"
+
 const BannerHome = ({ classes }) => {
   return (
     <div className={`banner-home ${classes ? classes : ''}`}>
       <div className="banner-home__img">
         <picture>
           <source
-            srcSet="/src/assets/images/banner-shoe-desktop.webp"
+            srcSet={bannerDesktop}
             media="(min-width: 992px)"
             loading="lazy"
           />
-          <img src="/src/assets/images/banner-shoe.webp" alt="botin phantom gx" loading="lazy" />
+          <img src={bannerMobile} alt="botin phantom gx" loading="lazy" />
         </picture>
       </div>
 

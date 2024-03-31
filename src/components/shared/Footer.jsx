@@ -4,6 +4,8 @@ import { Facebook } from '../icons/Facebook';
 import { YouTube } from '../icons/YouTube';
 import { Instagram } from '../icons/Instagram';
 import { DropdownFooteritem } from '../shared/DropdownFooteritem';
+import sid from '../../assets/images/sid.webp'
+import dataFiscal from '../../assets/images/data-fiscal.webp'
 
 const Footer = () => {
   return (
@@ -70,8 +72,8 @@ const Footer = () => {
       </div>
 
       <div className="footer__img">
-        <img src="/src/assets/images/sid.webp" className='sid' alt="Sistema de identidad digital" loading="lazy" />
-        <img src="/src/assets/images/data-fiscal.webp" className='data-fiscal' alt="Data fiscal" loading="lazy" />
+        <img src={sid} className='sid' alt="Sistema de identidad digital" loading="lazy" />
+        <img src={dataFiscal} className='data-fiscal' alt="Data fiscal" loading="lazy" />
       </div>
       <div className="footer__social-networks">
         <div className="item">
