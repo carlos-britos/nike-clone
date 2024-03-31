@@ -136,7 +136,7 @@ html[data-theme="dark"] {
 	}
 
 	&__body {
-    height: calc(100% - 59px /*tamaño del header*/);
+    height: calc(100% - 60px /*tamaño del header*/);
 		display: flex;
     overflow: hidden;
     position: relative;
@@ -145,6 +145,7 @@ html[data-theme="dark"] {
 		.body {
 			&__products {
 				width: 100%;
+				overflow: auto;
 			}
 
 			&__want-bag {
@@ -217,7 +218,15 @@ html[data-theme="dark"] {
 							background: unset;
 							border: none;
 							padding: 0 0.5rem;
-							max-width: 185px;
+							width: 185px;
+
+						}
+						@media (min-width: 576px) {
+							padding: 0.5rem 0.6rem;
+
+							input {
+								width: 295px;
+							}
 						}
 					}
 				}
@@ -271,4 +280,8 @@ html[data-theme="dark"] {
 
 body.cart-open {
 	overflow: hidden;
+
+	@media (min-width: 576px) {
+		margin-right: 0.6rem;
+	}
 }

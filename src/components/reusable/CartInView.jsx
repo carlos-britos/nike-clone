@@ -47,11 +47,15 @@ const CartInView = () => {
         <div className="c-cart__body">
           <div className="body__products">
             <ProductCard modifier="on-cart" />
+            <ProductCard modifier="on-cart" />
+            <ProductCard modifier="on-cart" />
+            <ProductCard modifier="on-cart" />
+            <ProductCard modifier="on-cart" />
           </div>
 
           <div className="body__want-bag">
             <div className="want-bag__img">
-              <img src="/src/assets/images/nike-bag.png" alt="Bolsa Nike" loading="lazy" />
+              <img src="src/assets/images/nike-bag.png" alt="Bolsa Nike" loading="lazy" />
             </div>
             <div className="want-bag__info">
               <div className="want-bag__text">

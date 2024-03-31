@@ -129,7 +129,7 @@ const MenuMobile = () => {
             <Icon iconSvg={<ArrowLeft />} />
           </button>
 
-          <Link to='/portfolio/' className="header__logo">
+          <Link to='/nike-clone/' className="header__logo">
             <Icon iconSvg={<Logo />} />
           </Link>
 
@@ -152,7 +152,7 @@ const MenuMobile = () => {
               </div>  
             ))}
 
-            <Link className="list-item list-item--with-icon" to="/portfolio/">
+            <Link className="list-item list-item--with-icon" to="/nike-clone/">
               <Icon iconSvg={<JordanLogo />} />
               Jordan
             </Link>

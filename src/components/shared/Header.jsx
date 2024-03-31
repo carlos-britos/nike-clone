@@ -60,7 +60,7 @@ const Header = ({ isDesktop }) => {
         {/* {!isDesktop && <MenuMobile darkMode={ darkMode } toggleThemeChange={ toggleThemeChange } />} */}
         {!isDesktop && <MenuMobile />}  
 
-        <Link to='/' className="header__logo">
+        <Link to='/nike-clone/' className="header__logo">
           <Icon iconSvg={<Logo />} />
         </Link>
 

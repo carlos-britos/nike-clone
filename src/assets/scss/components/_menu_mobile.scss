@@ -310,6 +310,10 @@ html[data-theme="dark"] {
 
 body.menu-open {
 	overflow: hidden;
+	
+	@media (min-width: 576px) {
+		margin-right: 0.6rem;
+	}
 }
 
 @keyframes bounce-left {

@@ -1,10 +1,12 @@
+* {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
 html, body {
   font-family: var(--font-archivo);
   overflow-x: hidden;
   color: var(--color-body);
-
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
 }
 
 .body-div {
