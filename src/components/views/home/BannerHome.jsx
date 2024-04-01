@@ -1,5 +1,5 @@
-import bannerMobile from "../../assets/images/banner-shoe.webp"
-import bannerDesktop from "../../assets/images/banner-shoe-desktop.webp"
+import bannerMobile from "../../../assets/images/banner-shoe.webp"
+import bannerDesktop from "../../../assets/images/banner-shoe-desktop.webp"
 
 const BannerHome = ({ classes }) => {
   return (
