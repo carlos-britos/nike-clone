@@ -111,7 +111,8 @@
         display: flex;
         align-items: center;
 
-        & > *:first-child {
+        & > *:first-child,
+        & > *:nth-child(2) {
           border-right: 1px solid var(--neutral-800);
         }
 

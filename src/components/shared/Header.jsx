@@ -53,6 +53,7 @@ const Header = ({ isDesktop }) => {
         <div className="top-header__actions">
           <div className="">Buscar tienda</div>
           <div className="">Ayuda</div>
+          <a href="https://github.com/carlos-britos/nike-clone" target='_blank' rel="noreferrer">Github</a>
         </div>
         
       </div>
